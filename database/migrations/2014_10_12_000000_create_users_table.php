@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('occupation');
             $table->string('bank_name');
             $table->string('bank_account');
-            $table->integer('bank_account_number');
+            $table->unsignedBigInteger('bank_account_number');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
